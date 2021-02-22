@@ -33,7 +33,7 @@ class TechList extends Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <ul>
-          {this.state.techs.map(tech => ( <TechItem key={tech} tech={tech} onDelete={() => this.handleDelete(tech)} /> ))}
+          {this.state.techs.map(tech => ( <TechItem /> ))}
         </ul>
         <input 
           type="text" 
